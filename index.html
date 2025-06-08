@@ -42,8 +42,8 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
                 <button id="close" class="text-2xl p-4">X</button>
                 <ul class="mt-8 space-y-4 px-4">
                     <li><a href="index.html" class="hover:underline">Home</a></li>
-                    <li><a href="#" class="hover:underline">New Arrival</a></li>
-                    <li><a href="#" class="hover:underline">Most Wanted</a></li>
+                    <li><a href="New Arrivals" class="hover:underline">New Arrival</a></li>
+                    <li><a href="Most Wanted" class="hover:underline">Most Wanted</a></li>
                     <li><a href="Collections.html" class="hover:underline">Collections</a></li>
                     <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
                 </ul>
@@ -77,9 +77,11 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     </nav>
 
     <!--Header Section-->
-    <section class="bg-gray-600 text-white p-4  flex justify-center text-center p-10 m-5 h-72 ">
+    <section class="bg-gray-600 text-white p-4  flex justify-center text-center  m-5 h-72 z-20">
 
-        <div>
+        <div class="relative z-0">
+            <div class=" mt-0 absolute z-0 animate-pulse duration:8s "><img src="./images/home 1.jpg"></div>
+            <div class="relative z-10">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
@@ -96,9 +98,11 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
                     stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
+            </div>
 
             </div>
         </div>
+
     </section>
     <div>
         <h1 class="text-3xl ml-3 m-10">Brands</h1>
@@ -316,12 +320,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         pop.classList.add("hidden")
     })
 
-let newarrival = document.querySelector(".newarrival") // hole div
-let show = document.getElementById("show") // link
 
-show.addEventListener("click", function(){
-    show.getElementById("newarrival").scrollIntoView({behavior:"smooth"});
-});
 
 </script>
 
